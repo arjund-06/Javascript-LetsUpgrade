@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Assignment 2</title>
+    <h3>NAME: ARJUN DAVE<br>
+        EMAIL ID: davearjun25@gmail.com
+    </h3>
+</head>
+<body>
+    <h3>Difference between var, let and const:</h3>
+<pre>
+The var is used to declare variables in a global scope but if you want to initiate variables in a block scope the let and const are used.
+Another difference wit the const is, it's value which is assigned to it cannot be editited furthur in the program. 
+</pre>
+<script>
+    var glob = 34;
+    var name = "ARJUN";
+    document.write("This is the name declared using var, globally - ",name);
+    {
+        let name = "DAVE";
+        document.write("<br>This is the name which was declared using let inside the block, but it cannot be accessed outside it - ",name);
+    } 
+    document.write("<br>This is the name which was declared using var globally and this will show the name declared first but not the name declared in the block - ",name);
+
+    document.write("<br>Now we shall declare a variable using const...");
+    const namee = "ARJUN DAV"
+
+    document.write("This is the variable occured - ",namee,"<br>Now if I try to edit it an error will occur.");
+    namee = "ARJUN DAVE"
+</script>    
+</body>
+</html>
