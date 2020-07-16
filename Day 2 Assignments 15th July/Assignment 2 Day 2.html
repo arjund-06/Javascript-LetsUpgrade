@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <h3>NAME: ARJUN DAVE<br>
+        EMAIL ID: davearjun25@gmail.com
+    </h3>
+</head>
+<body>
+    <h3>Different method of strings and arrays:</h3>
+    <pre style="font-family:'Times New Roman', Times, serif;">
+There are a few methods which can be used on strings and arrays,
+
+--> For Strings...
+
+1. split() - This splits the string into an array of substrings.
+2. toLowerCase() - This converts all the characters in the string to lowercase letters.
+3. toUpperCase() - This converts all the characters in the string to uppercase letters.
+
+--> For Arrays...
+
+1. push() - This adds the element mentioned to the end of the array.
+2. pop() - This removes the last element of the array
+
+--> But there are a few methods which can be used both on strings and arrays...
+
+1. indexOf() - This returns the index where the entered value is present in the string/array. 
+2. lastIndexOf() - This is returns the index of the last occurence of the entered value present in the string/array.
+
+    </pre>
+    <script>
+        str = "This is a string";
+        console.log("Using indexOf() on string - ",str.indexOf("s"));
+        console.log("Using lastIndexOf on string - ",str.lastIndexOf("i"));
+        console.log("Using toLowerCase - ",str.toLowerCase());
+        console.log("Using toUpperCase - ",str.toUpperCase());
+        console.log("Using split() - ",str.split(" "));
+
+        arr = [12,45,56,32,99,"Arjun","India","School",45,99];
+        console.log("Using indexOf() on array - ",arr.indexOf("Arjun"));
+        console.log("Using lastIndexOf on array - ",arr.lastIndexOf(45));
+        arr.push("New Element");
+        console.log("Using push - ",arr);
+        arr.pop();
+        console.log("Using pop - ",arr);
+    </script>
+</body>
+</html>
