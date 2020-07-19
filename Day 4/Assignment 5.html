@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <h3>NAME: ARJUN DAVE<br>EMAIL ID: davearjun25@gmail.com</h3>
+</head>
+<body>
+    <script>
+        let sales = prompt("Enter the number of sales:");
+        comission = 0
+        if (sales>0 && sales<=5000){
+        comission = (2/100)*sales;
+        }
+        else if(sales>5000 && sales<=10000){
+        comission = (5/100)*sales;
+        }
+        else if(sales>10000 && sales<=20000){
+        comission = (7/100)*sales;
+        }
+        else if(sales>20000){
+        comission = (10/100)*sales;
+        }
+        comLog= Math.log(comission);
+        console.log(`Comission is ${comission} ,and the log is ${comLog}.`);
+    </script>
+</body>
+</html>

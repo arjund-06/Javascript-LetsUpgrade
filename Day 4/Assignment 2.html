@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignent 2
+    </title>
+    <h3>NAME: ARJUN DAVE <br>EMAIL ID: davearjun25@gmail.com</h3>
+</head>
+<body>
+    <script>
+        const student = {
+            name : "Helinski",
+            age : 24,
+            projects : {
+                diceGame : "two player dice game using JavaScript"
+            }
+        };
+        let {name, age, projects:{diceGame}} = student;
+        console.log("All the elements are destructured...");
+        console.log(name,age,diceGame); 
+    </script>
+</body>
+</html>
